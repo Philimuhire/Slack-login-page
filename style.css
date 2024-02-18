@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFE6C9;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100%;
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+}
+
+.left {
+    flex: 1;
+    background-color: #FFE6C9; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+    color: #73114B;
+
+}
+
+.content h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.right {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.right .illustration img {
+    width: 50px; 
+    height: 50px;
+    text-align: left;
+}
+
+.right .content {
+    text-align: left;
+    margin-left: 0;
+}
+
+.right .content h1 {
+    font-size: 24px;
+    color: #525252
+}
+
+.right .content h3 {
+    color: #525252;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.login-info .icon {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.icon img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 20px;
+}
+
+.login-info p {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.remember-me label {
+    margin-right: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 7px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.remember-me input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #7F265B; /* Change to your desired color */
+}
+
+/* Custom checkbox checkmark */
+.custom-checkbox::after {
+    content: '';
+    display: block;
+    width: 7px; /* Adjust the size as needed */
+    height: 14px; /* Adjust the size as needed */
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    visibility: hidden;
+}
+
+.remember-me input[type="checkbox"]:checked + .custom-checkbox::after {
+    visibility: visible;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #7F265B; 
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #590c34; 
+}
+
+.right .create p {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+}
+
+.create-account {
+    color: #7F265B; 
+}
